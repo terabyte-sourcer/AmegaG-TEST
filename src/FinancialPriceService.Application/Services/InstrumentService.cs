@@ -13,7 +13,6 @@ namespace FinancialPriceService.Application.Services
         {
             _logger = logger;
 
-            // seed common instruments
             AddOrUpdate(new Instrument { Symbol = "EURUSD", Price = 1.00m, LastUpdated = DateTimeOffset.UtcNow });
             AddOrUpdate(new Instrument { Symbol = "USDJPY", Price = 150.00m, LastUpdated = DateTimeOffset.UtcNow });
             AddOrUpdate(new Instrument { Symbol = "BTCUSD", Price = 50000.00m, LastUpdated = DateTimeOffset.UtcNow });
